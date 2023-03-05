@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  
+  background-color: rgb(188, 242, 242);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+img {
+  border: 1px solid #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  width: 100px;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+  }
+  
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .split {
+  height: 1000%;
+  width: 90%;
+
+  z-index: 2;
+  top: 0;
+  overflow-x: hidden;
+  padding: 50px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(108, 197, 211);
+}
+
+.right {
+  right: 0;
+  background-color: rgb(10, 80, 88);
+}
+
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.buy-button{
+  background-color: azure;
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer {
+   position: relative;
+   width: 100%;
+   height: 80px;
+   padding: 2em 0em;
+   background-color: rgb(93, 147, 184);
+   color: white;
+   margin-top: 5em;
+   display: inline-block;
+   
+  
+}
+
+
+
+
+  </style>
+  </head>
+  <body>
+  
+  
+  
+<div class="topnav">
+    <a href="index.html">home</a>
+    <a href="abt.html">about</a>
+    <a href="cont.html">contact</a>
+    
+   
+</div>
+<img src="https://c0.wallpaperflare.com/preview/447/258/382/arm-break-coffee-coffee-cup.jpg"  style="width:900px" height="500px"> 
+<div style="text-align:center">
+  <h2>Services and Products</h2>
+  
+</div>
+<div class="split left">
+    <h2>Software Implementation</h2>
+    <p>Software implementation refers to the process of adopting and integrating a software application into a business workflow (as a part of a digital transformation strategy). Implementation of new tools and software into an enterprise can be complex, depending on the size of the organization and the software.</p>
+  </div>
+</div>
+
+<div class="split right">
+  
+    <h2>Digital Marketing</h2>
+    <p>The term digital marketing refers to the use of digital channels to market products and services in order to reach consumers. This type of marketing involves the use of websites, mobile devices, social media, search engines, and other similar channels.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?cs=srgb&dl=pexels-noah-erickson-404280.jpg&fm=jpg" style="width:100%" onclick="myFunction(this);">
+    <div><button class="buy button">Buy Now</button></div>
+  </div>
+  <div class="column">
+    <img src="https://os-wordpress-media.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2022/09/08001423/Apple-AirPods-Pro-2nd-Gen-2022.png" style="width:100%" onclick="myFunction(this);">
+    <div><button class="buy button">Buy Now</button></div>
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1572183717150-0ca8073a2457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJsdWV0b290aCUyMHNwZWFrZXJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80" style="width:100%" onclick="myFunction(this);">
+    <div><button class="buy button">Buy Now</button></div>
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGFwdG9wc3xlbnwwfHwwfHw%3D&w=1000&q=80" style="width:100%" onclick="myFunction(this);">
+    <div><button class="buy button">Buy Now</button></div>
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:50%">
+  <div id="imgtext"></div>
+</div>  
+<div class="footer">
+  
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="footer logo"  width="20%" height="30px">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="footer logo" width="10%" height="20px">
+        
+</div>
+</body>
+</html>
+

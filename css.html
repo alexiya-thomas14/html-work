@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-color: rgb(40, 37, 49);
+}
+h2 {
+  text-align: center;
+  color: gray;
+}
+h3{
+  text-align: center;
+  width: 520px;
+  color:rgb(43,43,72);
+  background-color: #4ca7af22;
+  padding: 20px;
+  margin-left: 500px ;
+  border:none;
+  border-radius: 2px;
+  cursor:pointer}
+h4{
+  text-align: center;
+}
+h5 {
+  color:white;
+  text-align-last: center;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  background-color:rgb(43, 43, 72);
+  box-sizing: border-box;
+}
+
+input[type=signup] {
+  width: 10%;
+  background-color: rgb(54, 153, 240);
+  color: white;
+  padding: 10px 15px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=signup]:hover {
+  background-color: blue;
+}
+
+input[type=signin] {
+  text-align: center;
+  width: 95%;
+  background-color: rgb(74, 74, 93);
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=signin]:hover{
+    background-color: grey;
+}
+input[type=text]{
+  color:white
+}
+input[type=checkbox]{
+  color:white
+}
+.blue{
+  color:blue;
+}
+
+div {
+  border-radius: 1px;
+  background-color: rgb(13, 11, 20);
+  padding: 30px;
+  color: darkgrey;
+  width: 500px;
+  margin-left: 500px;
+  
+}
+</style>
+
+
+<h2> Xtra <span class="blue"> Form</span></h2>
+<h4 style="color:grey;">Bootstrap 3 Xtra Form</h4>
+<h3 style="color: grey;">Sign up</h3>
+
+
+
+<div>
+  <form action="/action_page.php">
+    <p style="color:darkgray;">username</p>
+    <input type="text" id="uname" name="username" placeholder="Your name..">
+
+    <p style="color:darkgray;">emailid</p>
+    <input type="text" id="email" name="emailid" placeholder="Your emailid..">
+
+    <p style="color:darkgray;">password</p>
+    <input type="text" id="pword" name="password" placeholder="password..">
+
+    <p style="color:darkgray;">RetypePassword</p>
+    <input type="text" id="rpword" name="RetypePassword" placeholder="Retypepassword.."><br>
+    <label>
+        <input type="checkbox" checked="checked" name="terms and policies" style="margin-bottom:15px"> Accept the terms and policies
+      </label><br>
+
+  
+    <input type="signup" value="Sign Up">
+    <p style = "border-width:1px;border-style: dotted;"></p>
+
+    <h5>Already have an account?</h5>
+    
+    <input type="signin" value="Sign In">
+
+  </form>
+</div>
+
+</body>
+</html>
+
+
